@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press to Play</title>
+    <style>
+        /* Estilos para o botão estilo Cyberpunk */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        #start-button {
+            padding: 20px 40px;
+            font-size: 20px;
+            font-family: 'Press Start 2P', cursive; /* Fonte estilo retro futurista */
+            background-color: #00FF00; /* Verde neon */
+            color: #1C1C1C; /* Texto escuro */
+            border: 3px solid #00FF00; /* Borda verde neon */
+            border-radius: 8px; /* Bordas suaves */
+            cursor: pointer;
+            transition: all 0.3s ease; /* Transição suave para hover */
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.6); /* Sombra neon verde */
+        }
+
+        #start-button:hover {
+            background-color: #1C1C1C; /* Fundo escuro ao passar o mouse */
+            color: #00FF00; /* Texto verde neon no hover */
+            border-color: #FF007F; /* Borda rosa neon no hover */
+            transform: scale(1.05); /* Efeito de aumento no hover */
+            box-shadow: 0 0 20px rgba(255, 0, 127, 0.6), 0 0 40px rgba(255, 0, 127, 0.6); /* Efeito de brilho rosa neon */
+        }
+
+        /* Estilos gerais da página */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1C1C1C; /* Fundo escuro para combinar com o estilo */
+            color: white;
+        }
+
+        .game-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <button id="start-button">press to play!!</button>
+    </div>
+
+    <script>
+        document.getElementById("start-button").addEventListener("click", function() {
+            alert("GAME ON!");
+        });
+    </script>
+</body>
+</html>
